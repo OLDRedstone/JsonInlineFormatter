@@ -1,23 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <PublishAot>true</PublishAot>
-    <InvariantGlobalization>true</InvariantGlobalization>
-    <PackAsTool>True</PackAsTool>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>0.1.0</Version>
-    <Authors>obugs</Authors>
-    <Company />
-  </PropertyGroup>
+		<PropertyGroup>
+				<OutputType>Exe</OutputType>
+				<TargetFramework>net10.0</TargetFramework>
+				<ImplicitUsings>enable</ImplicitUsings>
+				<Nullable>enable</Nullable>
+				<PublishAot>true</PublishAot>
+				<InvariantGlobalization>true</InvariantGlobalization>
+				<PackAsTool>True</PackAsTool>
+				<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+				<Version>0.1.0</Version>
+				<Authors>obugs</Authors>
+				<Company />
+		</PropertyGroup>
 
-  <ItemGroup>
-    <None Update="example.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+		<ItemGroup>
+				<None Remove="example.json">
+				</None>
+				<None Include="../LICENSE.txt;README.md;README.zh-cn.md">
+						<Pack>True</Pack>
+						<PackagePath>/</PackagePath>
+				</None>
+		</ItemGroup>
 
 </Project>
