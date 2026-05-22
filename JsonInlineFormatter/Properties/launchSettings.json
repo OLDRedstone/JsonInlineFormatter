@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "JsonInlineFormatter": {
+      "commandName": "Project",
+      "commandLineArgs": "example.json out.json \"  ;.aliases;.roles[*];.score;.profile.;.actions[*].;.skillsMatrix[*][*];.projects[*].*[*]\""
+    }
+  }
+}
